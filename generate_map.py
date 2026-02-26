@@ -1091,6 +1091,6 @@ html = html.replace('CRIME_DATA_PLACEHOLDER',       crime_json)
 html = html.replace('TAX_FIPS_PLACEHOLDER',         tax_json)
 html = html.replace('COUNTY_TAX_PLACEHOLDER',       ctax_json)
 
-with open('florida_communities_map.html', 'w', encoding='utf-8') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 print(f'Done! {len(communities)} communities, {len(election_data)} election, {len(crime_data)} crime, {len(tax_data)} tax counties.')
